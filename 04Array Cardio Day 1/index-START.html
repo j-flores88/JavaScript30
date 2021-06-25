@@ -38,6 +38,7 @@
     const firstLast = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    const sortByAge = inventors.sort((a, b) => a.year - b.year)
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
@@ -54,7 +55,7 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-    console.log(bornIn1500, firstLast)
+    console.log(sortByAge)
   </script>
 </body>
 </html>
